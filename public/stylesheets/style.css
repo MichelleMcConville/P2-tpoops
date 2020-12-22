@@ -2,3 +2,63 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+ body {
+
+  background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke)
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 0px 2px 0px;
+  background-image: linear-gradient(#63738A, #9CB3D6);
+  width: 100vw;
+}
+ 
+img {
+  margin-top: 8px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#63738A, #9CB3D6, #B3B3B3);
+}
+
+label {
+  font-family: 'Orbitron', sans-serif;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 0px 2px 0px;
+  background-image: linear-gradient(#63738A, #9CB3D6);
+  width: 100vw;
+}
+
+.form-group {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sign-up-header {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 3px  #242323, 0 0 5px #B3B3B3;
+}
+
+
+#name-input, #email-input, #password-input {
+  border-color: white 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px silver;
+  background-image: linear-gradient(white, lightgray);
+  width: 70vw;
+  height: 8vh;
+  padding-left: 10px;
+}
+
+
+
+/* font-family: 'Allerta Stencil', sans-serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Kurale', serif;
+font-family: 'Marcellus', serif;
+font-family: 'Rancho', cursive; */
