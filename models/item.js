@@ -1,19 +1,17 @@
 
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     const Item = sequelize.define('Item', {
         store: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
-
         zipcode: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
-
         state: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
     })
     return Item;
