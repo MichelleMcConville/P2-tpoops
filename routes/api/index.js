@@ -2,6 +2,7 @@ const router = require('express').Router();
 // Requiring our models and passport as we've configured it
 const db = require('../../models');
 const passport = require('../../config/passport');
+const itemController = require('../../controllers/itemController');
 
 // Using the passport.authenticate middleware with our local strategy.
 // If the user has valid login credentials, send them to the members page.
@@ -39,4 +40,22 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
+router.get('/items', itemController.getItems);
+
+router.post('/items', itemController.createItem);
+
+router.put('/items/:id', (req, res) => {
+  console.log(req.params);
+  console.log(req.body);
+  itemController.updateItem(req, res);
+});
+
+router.delete('/items/:id', (req, res) => {
+  console.log(req.params);
+  console.log(req.body);
+  itemController.deleteItem(req, res);
+});
+
 module.exports = router;
+
+
