@@ -12,7 +12,7 @@ const itemController = {
     });
   },
   updateItem: (req, res) => {
-    db.Item.update({
+    db.Item.update(req.body, {
       where: {
         id: req.params.id
       }
@@ -21,7 +21,7 @@ const itemController = {
     });
   },
   deleteItem: (req, res) => {
-    db.Item.destroy({
+    db.Item.destroy(req.body, {
       where: {
         id: req.params.id
       }
