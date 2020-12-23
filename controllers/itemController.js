@@ -21,7 +21,7 @@ const itemController = {
     });
   },
   deleteItem: (req, res) => {
-    db.Item.destroy((req.body, {
+    db.Item.destroy(req.body, {
       where: {
         id: req.params.id
       }

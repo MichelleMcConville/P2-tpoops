@@ -45,14 +45,10 @@ router.get('/items', itemController.getItems);
 router.post('/items', itemController.createItem);
 
 router.put('/items/:id', (req, res) => {
-  console.log(req.params);
-  console.log(req.body);
   itemController.updateItem(req, res);
 });
 
 router.delete('/items/:id', (req, res) => {
-  console.log(req.params);
-  console.log(req.body);
   itemController.deleteItem(req, res);
 });
 
