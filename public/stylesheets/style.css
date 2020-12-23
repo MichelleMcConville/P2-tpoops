@@ -4,8 +4,10 @@ form.login {
 }
 
  body {
-
-  background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke)
+    background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 nav {
@@ -53,6 +55,7 @@ footer {
   width: 70vw;
   height: 8vh;
   padding-left: 10px;
+  margin:
 }
 
 
