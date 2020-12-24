@@ -3,20 +3,33 @@ form.login {
   margin-top: 50px;
 }
 
- body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke)
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ body {
+  background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 0px 2px 0px;
   background-image: linear-gradient(#63738A, #9CB3D6);
   width: 100vw;
 }
  
 img {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 button {
@@ -30,16 +43,32 @@ label {
 
 footer {
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 0px 2px 0px;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
   background-image: linear-gradient(#63738A, #9CB3D6);
   width: 100vw;
+  height: 12vh;
+}
+
+.card {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+  border-color: #63738A solid;
+  box-shadow: 0px 2px 5px #B3B3B3;
+  margin-left: auto;
+  width: 200px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .form-group {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#sign-up-header {
+#sign-up-header, h2 {
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 3px  #242323, 0 0 5px #B3B3B3;
 }
