@@ -1,91 +1,135 @@
+/************************/
+/*        Global        */
+/************************/
+body {
+  background-image: linear-gradient(azure)
+  
+}
+​
+/* button {
+  background-image: linear-gradient(#26303D, #63738A, #B0C0D6, #B3B3B3, #8A7D63, #3D3320);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+​
+footer {
+  background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  width: 100vw;
+}
+​
 form.signup,
 form.login {
   margin-top: 50px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+​
+h2 {
+  margin-top: 80px;
+  text-align: center;
 }
-
-html, body {
-  height: 100%;
-  width: 100%;
+​
+img {
+  margin-top: 8px;
 }
-
- body {
-  background-image: linear-gradient(45deg, whitesmoke 0% 50%, lightgray, whitesmoke);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-
+​
+label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+}
+​
 nav {
+  background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(#63738A, #9CB3D6);
+  text-shadow: 2px 0px 2px 0px;
   width: 100vw;
 }
  
-img {
-  margin-top: 6px;
-}
-
-button {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(#63738A, #9CB3D6, #B3B3B3);
-}
-
-label {
-  font-family: 'Orbitron', sans-serif;
-}
-
-footer {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 13px;
-  padding: 20px;
-  background-image: linear-gradient(#63738A, #9CB3D6);
-  width: 100vw;
-  height: 12vh;
-}
-
-.card {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border: 2px;
-  border-color: #63738A solid;
-  box-shadow: 0px 2px 5px #B3B3B3;
-  margin-left: auto;
-  width: 200px;
-  padding: 20px;
-  border-radius: 20px;
-}
-
+/************************/
+/*        Classes       */
+/************************/
+​
 .form-group {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-#sign-up-header, h2 {
-  font-family: 'Orbitron', sans-serif;
-  text-shadow: 0 0 3px  #242323, 0 0 5px #B3B3B3;
+​
+.push {
+  height: 200px;
 }
-
-
+​
+.signUpBtn {
+  background: linear-gradient(#26303D, #63738A, #B0C0D6, #B3B3B3, #8A7D63, #3D3320);
+  border-radius: .5rem;
+  color: whitesmoke;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  justify-content: center;
+  margin: 2rem 0.5rem;
+  padding: 0.5rem;
+  text-shadow: -1px 0 #2b213b, 0 2px #333, 1px 0 #333, 0 -1px #333;
+  
+}
+.signUpBtn:hover {
+  box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
+  /* color: hotpink; */
+  cursor: pointer;
+  transform: translateY(0.1rem);
+  transition: transform 150ms;
+}
+​
+.signUpBtn[disabled]:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+​
+/************************/
+/*          IDs         */
+/************************/
+​
+#card-deck {
+  margin: 20px 100px;
+  text-align: center;
+}
+​
+#card-text {
+  color: #333;
+  font-weight: 700;
+  margin: 0 10px;
+}
+​
+#left-card {
+  background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3);
+}
+​
+#middle-card {
+  background: linear-gradient(to right, #B3B3B3, #B0C0D6);
+}
+​
+#right-card {
+  background: linear-gradient(to right,#B0C0D6, #63738A, #26303D);
+}
+​
 #name-input, #email-input, #password-input {
+  background-image: linear-gradient(white, lightgray);
   border-color: white 5px;
   border-radius: 10px;
   box-shadow: 0px 0px 2px silver;
-  background-image: linear-gradient(white, lightgray);
-  width: 70vw;
   height: 8vh;
   padding-left: 10px;
-  margin:
+  width: 70vw;
 }
-
-
-
+​
+#sign-up-header {
+  font-family: 'Orbitron', sans-serif;
+  /* text-shadow: 0 0 3px  #242323, 0 0 5px #B3B3B3; */
+}
+​
+/************************/
+/*        @Media        */
+/************************/
+​
 /* font-family: 'Allerta Stencil', sans-serif;
 font-family: 'El Messiri', sans-serif;
 font-family: 'Kurale', serif;
