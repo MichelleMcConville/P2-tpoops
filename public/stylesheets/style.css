@@ -3,14 +3,13 @@
 /************************/
 body {
   background-image: linear-gradient(azure)
-  
 }
-​
+
 /* button {
   background-image: linear-gradient(#26303D, #63738A, #B0C0D6, #B3B3B3, #8A7D63, #3D3320);
   font-family: Arial, Helvetica, sans-serif;
 } */
-​
+
 footer {
   background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
   font-family: Arial, Helvetica, sans-serif;
@@ -18,26 +17,26 @@ footer {
   text-align: center;
   width: 100vw;
 }
-​
+
 form.signup,
 form.login {
   margin-top: 50px;
 }
-​
+
 h2 {
   margin-top: 80px;
   text-align: center;
 }
-​
+
 img {
   margin-top: 8px;
 }
-​
+
 label {
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
 }
-​
+
 nav {
   background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
   font-family: Arial, Helvetica, sans-serif;
@@ -48,15 +47,15 @@ nav {
 /************************/
 /*        Classes       */
 /************************/
-​
+
 .form-group {
   font-family: Arial, Helvetica, sans-serif;
 }
-​
+
 .push {
   height: 200px;
 }
-​
+
 .signUpBtn {
   background: linear-gradient(#26303D, #63738A, #B0C0D6, #B3B3B3, #8A7D63, #3D3320);
   border-radius: .5rem;
@@ -77,40 +76,40 @@ nav {
   transform: translateY(0.1rem);
   transition: transform 150ms;
 }
-​
+
 .signUpBtn[disabled]:hover {
   box-shadow: none;
   cursor: not-allowed;
   transform: none;
 }
-​
+
 /************************/
 /*          IDs         */
 /************************/
-​
+
 #card-deck {
   margin: 20px 100px;
   text-align: center;
 }
-​
+
 #card-text {
   color: #333;
   font-weight: 700;
   margin: 0 10px;
 }
-​
+
 #left-card {
   background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3);
 }
-​
+
 #middle-card {
   background: linear-gradient(to right, #B3B3B3, #B0C0D6);
 }
-​
+
 #right-card {
   background: linear-gradient(to right,#B0C0D6, #63738A, #26303D);
 }
-​
+
 #name-input, #email-input, #password-input {
   background-image: linear-gradient(white, lightgray);
   border-color: white 5px;
@@ -120,18 +119,17 @@ nav {
   padding-left: 10px;
   width: 70vw;
 }
-​
+
 #sign-up-header {
   font-family: 'Orbitron', sans-serif;
   /* text-shadow: 0 0 3px  #242323, 0 0 5px #B3B3B3; */
 }
-​
+
 /************************/
 /*        @Media        */
 /************************/
-​
+
 /* font-family: 'Allerta Stencil', sans-serif;
 font-family: 'El Messiri', sans-serif;
 font-family: 'Kurale', serif;
 font-family: 'Marcellus', serif;
-font-family: 'Rancho', cursive; */
