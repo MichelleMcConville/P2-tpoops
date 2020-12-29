@@ -41,11 +41,11 @@ router.get('/user_data', (req, res) => {
 });
 
 router.put('/user/:id', (req, res) => {
-  userController.updateUser(req, res)
+  userController.updateUser(req, res);
 });
 
 router.delete('/user/:id', (req, res) => {
-  userController.deleteUser(req, res)
+  userController.deleteUser(req, res);
 });
 
 router.get('/items', itemController.getItems);
