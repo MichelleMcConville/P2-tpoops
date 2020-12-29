@@ -3,7 +3,7 @@ const router = require('express').Router();
 const db = require('../../models');
 const passport = require('../../config/passport');
 const itemController = require('../../controllers/itemController');
-
+const userController = require('../../controllers/userController');
 // Using the passport.authenticate middleware with our local strategy.
 // If the user has valid login credentials, send them to the members page.
 // Otherwise the user will be sent an error
@@ -38,6 +38,14 @@ router.get('/user_data', (req, res) => {
   // Sending back a password, even a hashed password, isn't a good idea
   const { password, ...user } = req.user;
   res.json(user);
+});
+
+router.put('/user/:id', (req, res) => {
+  userController.updateUser(req, res)
+});
+
+router.delete('/user/:id', (req, res) => {
+  userController.deleteUser(req, res)
 });
 
 router.get('/items', itemController.getItems);
