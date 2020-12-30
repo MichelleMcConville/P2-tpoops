@@ -1,0 +1,164 @@
+/************************/
+/*        Global        */
+/************************/
+body {
+  /* background-image: linear-gradient(azure) */
+  background-color: azure;
+}
+​
+footer {
+  background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}
+​
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+​
+h2 {
+  margin-top: 80px;
+  text-align: center;
+}
+​
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  margin-left: 12px;
+}
+​
+img {
+  margin-top: 8px;
+}
+​
+label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  margin: 10px 0;
+}
+​
+nav {
+  background-image: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  text-shadow: 2px 0px 2px 0px;
+  top: 0;
+  width: 100vw;
+}
+ 
+/************************/
+/*        Classes       */
+/************************/
+​
+.btn {
+  background: linear-gradient(#26303D, #63738A, #B0C0D6, #B3B3B3, #8A7D63, #3D3320);
+  border-radius: .5rem;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 700;
+  justify-content: center;
+  margin: 2rem 2rem 2rem .75rem;
+  padding: 0.6666rem;
+  text-align: center;
+  text-shadow: -1px 0 #2b213b, 0 2px #333, 1px 0 #333, 0 -1px #333;
+  
+}
+.btn:hover {
+  box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
+  cursor: pointer;
+  transform: translateY(0.1rem);
+  transition: transform 150ms;
+}
+​
+.btn[disabled]:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+​
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
+}
+​
+.form-group {
+  font-family: Arial, Helvetica, sans-serif;
+}
+​
+.nav-wrapper.a {
+  padding: 0 20px;
+}
+​
+/************************/
+/*          IDs         */
+/************************/
+​
+#card-deck {
+  margin: 20px 100px;
+  text-align: center;
+}
+​
+#card-text {
+  color: #333;
+  font-weight: 700;
+  margin: 0 10px;
+}
+​
+#fa {
+  font-size: 60px;
+}
+​
+#left-card {
+  background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3);
+}
+​
+#middle-card {
+  background: linear-gradient(to right, #B3B3B3, #B0C0D6);
+}
+​
+#right-card {
+  background: linear-gradient(to right,#B0C0D6, #63738A, #26303D);
+}
+​
+#name-input, #email-input, #password-input {
+  background-image: linear-gradient(white, lightgray);
+  border-color: white 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px silver;
+  height: 8vh;
+  padding-left: 10px;
+  width: 70vw;
+}
+​
+/************************/
+/*       Pop-Outs       */
+/************************/
+​
+.card:hover {
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #2b213b;
+  transform: translateY(0.1rem);
+  transition: transform 150ms;
+}
+​
+card[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+​
+#card-text:hover {
+  cursor: pointer;
+  transform: translateY(0.1rem);
+  transition: transform 150ms;
+}
+​
+card-text[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
