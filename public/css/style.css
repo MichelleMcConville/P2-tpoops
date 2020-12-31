@@ -11,9 +11,9 @@ footer {
   bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  height: 8px;
+  height: 5vh;
   position: fixed;
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
   width: 100vw;
 }
@@ -93,11 +93,7 @@ nav {
 
 .form-group {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.login,
-.signup {
-  
+  margin-top: 5px;
 }
 
 .nav-wrapper.a {
@@ -141,6 +137,7 @@ nav {
   border-radius: 10px;
   box-shadow: 0px 0px 2px silver;
   height: 8vh;
+  margin: 8px 0;
   padding-left: 10px;
   width: 70vw;
 }
@@ -177,23 +174,3 @@ card-text[disabled]:hover {
 /*        @Media        */
 /************************/
 
-/* body {
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-}
-
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, red, purple);
-  padding: 3px;
-}
-
-.module {
-  background: #222;
-  color: white;
-  padding: 2rem;
-} */
