@@ -5,6 +5,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     zipcode: {
       type: DataTypes.STRING,
       allowNull: false
