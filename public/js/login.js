@@ -1,13 +1,13 @@
-let $ = window.$;
+const $ = window.$;
 
 $(document).ready(() => {
-  let loginForm = $('form.login');
-  let emailInput = $('input#email-input');
-  let passwordInput = $('input#password-input');
+  const loginForm = $('form.login');
+  const emailInput = $('input#email-input');
+  const passwordInput = $('input#password-input');
 
   loginForm.on('submit', event => {
     event.preventDefault();
-    let userData = {
+    const userData = {
       email: emailInput.val().trim(),
       password: passwordInput.val().trim()
     };
@@ -21,7 +21,7 @@ $(document).ready(() => {
     passwordInput.val('');
   });
 
-  let loginUser = (email, password) => {
+  const loginUser = (email, password) => {
     $.post('/api/login', {
       email: email,
       password: password

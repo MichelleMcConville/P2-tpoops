@@ -1,6 +1,6 @@
-let path = require('path');
-let isAuthenticated = require('../../config/middleware/isAuthenticated');
-let router = require('express').Router();
+const path = require('path');
+const isAuthenticated = require('../../config/middleware/isAuthenticated');
+const router = require('express').Router();
 
 router.get('/', (req, res) => {
     res.render('index');

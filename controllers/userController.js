@@ -1,5 +1,5 @@
-let db = require('../models');
-let userController = {
+const db = require('../models');
+const userController = {
   createUser: (req, res) => {
     db.User.create(req.body).then((results) => res.json(results));
   },

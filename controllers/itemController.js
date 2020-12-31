@@ -1,5 +1,5 @@
-let db = require('../models');
-let itemController = {
+const db = require('../models');
+const itemController = {
   createItem: (req, res) => {
     db.Item.create(req.body).then((results) => res.json(results));
   },
