@@ -4,7 +4,9 @@
   <div class="row">
     <div class="col left">
       <h3>Login</h3>
+
       <form class="login">
+
         <div class="form-group col">
           <label for="loginEmail">eMail Address</label>
           <input type="email" class="form-control" id="email-input" placeholder="Enter eMail Address Here" />
@@ -14,14 +16,17 @@
           <label for="loginPassword">Password</label>
           <input type="password" class="form-control" id="password-input" placeholder="Enter Password Here" />
         </div>
+
         <div style="display: none" id="alert" class="alert alert-danger" role="alert">
           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
           <span class="sr-only">Error:</span> <span class="msg"></span>
         </div>
+
         <button type="submit" class="btn col">Login</button>
       </form>
       
     </div>
   </div>
 </div>
+
 {{>footer}}

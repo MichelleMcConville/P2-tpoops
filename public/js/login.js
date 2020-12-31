@@ -21,16 +21,16 @@ $(document).ready(() => {
     passwordInput.val('');
   });
 
-  function loginUser (email, password) {
+  const loginUser = (email, password) => {
     $.post('/api/login', {
       email: email,
       password: password
     })
       .then(() => {
-        window.location.replace('/members');
+        window.location.replace('/home');
       })
       .catch(err => {
         console.log(err);
       });
-  }
+  };
 });

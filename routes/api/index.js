@@ -29,6 +29,10 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
+// router.get('/user', userController.getUsers);
+
+// router.post('/user', userController.createUser);
+
 router.put('/user/:id', (req, res) => {
   userController.updateUser(req, res);
 });

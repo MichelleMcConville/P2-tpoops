@@ -3,17 +3,23 @@ const isAuthenticated = require('../../config/middleware/isAuthenticated');
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  if (req.user) {
-    res.redirect('/members');
-  }
-  res.sendFile(path.join(__dirname, '../../public/signup.html'));
+  res.render('index');
+});
+
+router.get('/signup', (req, res) => {
+  res.render('signup');
 });
 
 router.get('/login', (req, res) => {
-  if (req.user) {
-    res.redirect('/members');
-  }
-  res.sendFile(path.join(__dirname, '../../public/login.html'));
+  res.render('login');
+});
+
+router.get('/find', (req, res) => {
+  res.render('found');
+});
+
+router.get('/search', (req, res) => {
+  res.render('search');
 });
 
 router.get('/logout', (req, res) => {
@@ -21,8 +27,8 @@ router.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
-router.get('/members', isAuthenticated, (_req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/members.html'));
+router.get('/home', isAuthenticated, (_req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/home.html'));
 });
 
 module.exports = router;

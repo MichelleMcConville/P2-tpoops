@@ -20,19 +20,19 @@ $(document).ready(() => {
     passwordInput.val('');
   });
 
-  function signUpUser (email, password) {
+  const signUpUser = (email, password) => {
     $.post('/api/signup', {
       email: email,
       password: password
     })
       .then(() => {
-        window.location.replace('/members');
+        window.location.replace('/home');
       })
       .catch(handleLoginErr);
-  }
+  };
 
-  function handleLoginErr (err) {
+  const handleLoginErr = err => {
     $('#alert .msg').text(err.responseJSON);
     $('#alert').fadeIn(500);
-  }
+  };
 });
