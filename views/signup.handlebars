@@ -1,24 +1,32 @@
 {{>navbar}}
+
 <div class="container">
   <div class="row">
   <div class="col left">
     <h3>Sign Up</h3>
+
     <form class="signup">
+
       <div class="form-group col">
         <label for="signUpEmail">eMail Address</label>
         <input type="email" class="form-control" id="email-input" placeholder="Enter eMail Address Here" />
       </div>
+
       <div class="form-group col">
         <label for="signUpPassword">Password</label>
         <input type="password" class="form-control" id="password-input" placeholder="Enter Password Here" />
       </div>
+
       <div style="display: none" id="alert" class="alert alert-danger" role="alert" >
         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
         <span class="sr-only">Error:</span> <span class="msg"></span>
       </div>
+
     <button type="submit" class="btn col">Sign Up</button>
     </form>
+
   </div>
   </div>
 </div>
+
 {{>footer}}

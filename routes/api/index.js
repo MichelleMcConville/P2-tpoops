@@ -1,8 +1,8 @@
-const router = require('express').Router();
-const db = require('../../models');
-const passport = require('../../config/passport');
-const itemController = require('../../controllers/itemController');
-const userController = require('../../controllers/userController');
+let router = require('express').Router();
+let db = require('../../models');
+let passport = require('../../config/passport');
+let itemController = require('../../controllers/itemController');
+let userController = require('../../controllers/userController');
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
   res.json({
@@ -25,9 +25,13 @@ router.get('/user_data', (req, res) => {
   if (!req.user) {
     return res.json({});
   }
-  const { password, ...user } = req.user;
+  let { password, ...user } = req.user;
   res.json(user);
 });
+
+// router.get('/user', userController.getUsers);
+
+// router.post('/user', userController.createUser);
 
 router.put('/user/:id', (req, res) => {
   userController.updateUser(req, res);

@@ -1,27 +1,14 @@
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
-const db = require('../models');
+let passport = require('passport');
+let LocalStrategy = require('passport-local').Strategy;
+let db = require('../models');
 
 passport.use(
-  new LocalStrategy(
-    {
-      usernameField: 'email'
-    },
-    (email, password, done) => {
-      db.User.findOne({
-        where: {
-          email
-        }
-      }).then(dbUser => {
-        if (!dbUser || !dbUser.validPassword(password)) {
-          return done(null, false, {
-            message: 'Incorrect email or password.'
-          });
-        }
-        return done(null, dbUser);
-      });
-    }
-  )
+  new LocalStrategy({ usernameField: 'email' },(email, password, done) => {
+    db.User.findOne({ where: { email }
+    }).then(dbUser => {
+      return !dbUser || !dbUser.validPassword(password) ? done(null, false, { message: 'Incorrect email or password.' }) : done(null, dbUser);
+    });
+  })
 );
 
 passport.serializeUser((user, cb) => {
