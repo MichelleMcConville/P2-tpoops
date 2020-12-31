@@ -3,7 +3,7 @@
 /************************/
 body {
   /* background-image: linear-gradient(azure) */
-  background-color: azure;
+  background-image: linear-gradient(to right, white, #B3B3B3)
 }
 
 footer {
@@ -11,7 +11,9 @@ footer {
   bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  height: 10vh;
   position: fixed;
+  padding-top: 25px;
   text-align: center;
   width: 100vw;
 }
@@ -22,7 +24,9 @@ form.login {
 }
 
 h2 {
-  margin-top: 80px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  margin-top: 160px;
   text-align: center;
 }
 
