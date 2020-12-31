@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require('../models');
 const userController = {
   createUser: (req, res) => {
     db.User.create(req.body).then((results) => res.json(results));
