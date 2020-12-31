@@ -14,5 +14,7 @@ const itemController = {
 
   deleteItem: (req, res) => {
     db.Item.destroy(req.body, { where: { id: req.params.id } }).then((results) => res.json(results));
-  },
+  }
 };
+
+module.exports = itemController;

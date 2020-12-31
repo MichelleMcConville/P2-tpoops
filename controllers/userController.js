@@ -14,7 +14,7 @@ const userController = {
 
   deleteUser: (req, res) => {
     db.User.destroy(req.body, { where: { id: req.params.id } }).then((results) => res.json(results));
-  },
+  }
 };
 
 module.exports = userController;

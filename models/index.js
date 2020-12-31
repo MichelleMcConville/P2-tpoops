@@ -16,6 +16,7 @@ if (config.use_env_variable) {
     config.password,
     config
   );
+}
 
 fs.readdirSync(__dirname)
   .filter(
