@@ -9,11 +9,11 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    zipcode: {
+    state: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    state: {
+    zipcode: {
       type: DataTypes.STRING,
       allowNull: false
     }
