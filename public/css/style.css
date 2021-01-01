@@ -42,6 +42,7 @@ img {
 }
 
 label {
+  color: #333;
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
   margin: 10px 0;
@@ -131,7 +132,13 @@ nav {
   background: linear-gradient(to right,#B0C0D6, #63738A, #26303D);
 }
 
-#name-input, #email-input, #password-input {
+#name-input, 
+#email-input, 
+#password-input, 
+#store-input,
+#city-input,
+#state-input,
+#zip-code-input{
   background-image: linear-gradient(white, lightgray);
   border-color: white 5px;
   border-radius: 10px;
