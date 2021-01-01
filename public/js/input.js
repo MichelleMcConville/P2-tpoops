@@ -35,7 +35,7 @@ $(document).ready(() => {
     })
       .then(() => {
         window.location.replace('/input');
-    })
+      })
       .cath(handleInputErr);
   };
 
