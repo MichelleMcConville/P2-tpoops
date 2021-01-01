@@ -14,8 +14,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/find', (req, res) => {
-  res.render('found');
+router.get('/input', (req, res) => {
+  res.render('input');
 });
 
 router.get('/search', (req, res) => {
