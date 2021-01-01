@@ -5,26 +5,26 @@
   <div class="col left">
     <h3>Found TP Here</h3>
 
-    <form class="Found">
+    <form action='/api/test' method='post' class="Found">
 
       <div class="form-group col">
         <label for="store">Store</label>
-        <input type="text" class="form-control" id="store-input" placeholder="Enter Store Name Here" />
+        <input type="text" class="form-control" id="store-input" name='store' placeholder="Enter Store Name Here" />
       </div>
 
       <div class="form-group col">
         <label for="city">City</label>
-        <input type="text" class="form-control" id="city-input" placeholder="Enter City Here" />
+        <input type="text" class="form-control" id="city-input" name='city' placeholder="Enter City Here" />
       </div>
 
       <div class="form-group col">
         <label for="state">State</label>
-        <input type="text" class="form-control" id="state-input" placeholder="Select State From Dropdown" />
+        <input type="text" class="form-control" id="state-input" name='state' placeholder="Select State From Dropdown" />
       </div>
       
       <div class="form-group col">
         <label for="zipCode">Zip Code</label>
-        <input type="text" class="form-control" id="zip-code-input" placeholder="Enter Zip Code Here" />
+        <input type="text" class="form-control" id="zip-code-input" name='zip' placeholder="Enter Zip Code Here" />
       </div>
 
       <div style="display: none" id="alert" class="alert alert-danger" role="alert" >

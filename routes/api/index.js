@@ -53,4 +53,8 @@ router.delete('/items/:id', (req, res) => {
   itemController.deleteItem(req, res);
 });
 
+router.post('/test', (req, res) => {
+  console.log('INCOMING REQUEST FROM FRONT END---> ', req.body);
+});
+
 module.exports = router;
