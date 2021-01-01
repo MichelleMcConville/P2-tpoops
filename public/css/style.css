@@ -92,13 +92,23 @@ nav {
   box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
 }
 
-.form-group {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 5px;
+.input-field {
+  margin-bottom: 5px;
+}
+
+.input-field > label {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  color: #2b213b;
+  font-size: 20px;
+  margin: 5px 0 0 0;
 }
 
 .nav-wrapper.a {
   padding: 0 20px;
+}
+
+.validate {
+  padding: 0;
 }
 
 /************************/
@@ -145,7 +155,7 @@ nav {
   box-shadow: 0px 0px 2px silver;
   height: 8vh;
   margin: 8px 0;
-  padding-left: 10px;
+  padding-left: 10px 0 0 0;
   width: 70vw;
 }
 
