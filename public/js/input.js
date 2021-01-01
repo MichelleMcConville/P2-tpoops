@@ -1,3 +1,4 @@
+const $ = window.$;
 
 $(document).ready(() => {
   const inputForm = $('form.input');
@@ -32,11 +33,10 @@ $(document).ready(() => {
       state: state,
       zipcode: zipcode
     })
-      .then(() => {
-        window.location.replace('/input')
+      .then(() => {window.location.replace('/input');
     })
       .cath(handleInputErr);
-  }
+  };
 
   const handleInputErr = err => {
     $('#alert .msg').text(err.responseJSON);
