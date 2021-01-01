@@ -33,7 +33,8 @@ $(document).ready(() => {
       state: state,
       zipcode: zipcode
     })
-      .then(() => {window.location.replace('/input');
+      .then(() => {
+        window.location.replace('/input');
     })
       .cath(handleInputErr);
   };
