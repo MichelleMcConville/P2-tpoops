@@ -1,5 +1,3 @@
-const $ = window.$;
-
 $(document).ready(() => {
   const signUpForm = $('form.signup');
   const emailInput = $('input#email-input');
@@ -35,4 +33,6 @@ $(document).ready(() => {
     $('#alert .msg').text(err.responseJSON);
     $('#alert').fadeIn(500);
   };
+  
+  $('.sidenav').sidenav();
 });

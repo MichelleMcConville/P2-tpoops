@@ -1,5 +1,3 @@
-const $ = window.$;
-
 $(document).ready(() => {
   const inputForm = $('form.input');
   const storeInput = $('input#store-input');
@@ -43,4 +41,6 @@ $(document).ready(() => {
     $('#alert .msg').text(err.responseJSON);
     $('#alert').fadeIn(500);
   };
+
+  $('.sidenav').sidenav();
 });
