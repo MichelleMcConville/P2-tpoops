@@ -2,7 +2,6 @@ const router = require('express').Router();
 const db = require('../../models');
 const passport = require('../../config/passport');
 const itemController = require('../../controllers/itemController');
-const userController = require('../../controllers/userController');
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
   res.json({
@@ -29,17 +28,13 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
-// router.get('/user', userController.getUsers);
+router.get('/user', (req, res) => {});
 
-// router.post('/user', userController.createUser);
+router.post('/user', (req, res) => {});
 
-router.put('/user/:id', (req, res) => {
-  userController.updateUser(req, res);
-});
+router.put('/user/:id', (req, res) => {});
 
-router.delete('/user/:id', (req, res) => {
-  userController.deleteUser(req, res);
-});
+router.delete('/user/:id', (req, res) => {});
 
 router.get('/items', itemController.getItems);
 
