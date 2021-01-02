@@ -29,16 +29,20 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
-// router.get('/user', userController.getUsers);
+ router.get('/user', (req, res) => {
+  db.User
+ });
 
-// router.post('/user', userController.createUser);
+ router.post('/user', (req, res) => {
+  db.User
+ });
 
 router.put('/user/:id', (req, res) => {
-  userController.updateUser(req, res);
+  db.User
 });
 
 router.delete('/user/:id', (req, res) => {
-  userController.deleteUser(req, res);
+  db.User
 });
 
 router.get('/items', itemController.getItems);
