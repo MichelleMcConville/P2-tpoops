@@ -28,21 +28,13 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
-router.get('/user', (req, res) => {
-  
-});
+router.get('/user', (req, res) => {});
 
-router.post('/user', (req, res) => {
- 
-});
+router.post('/user', (req, res) => {});
 
-router.put('/user/:id', (req, res) => {
-  
-});
+router.put('/user/:id', (req, res) => {});
 
-router.delete('/user/:id', (req, res) => {
-  
-});
+router.delete('/user/:id', (req, res) => {});
 
 router.get('/items', itemController.getItems);
 
