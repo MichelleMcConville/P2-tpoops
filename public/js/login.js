@@ -33,4 +33,6 @@ $(document).ready(() => {
         console.log(err);
       });
   };
+
+  $('.sidenav').sidenav();
 });
