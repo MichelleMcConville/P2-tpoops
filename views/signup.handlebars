@@ -2,30 +2,31 @@
 
 <div class="container">
   <div class="row">
-  <div class="col left">
-    <h3>Sign Up</h3>
+    <div class="col left">
+      <h3>Sign Up</h3>
 
-    <form class="signup">
+      <form class="signup">
 
-      <div class="form-group col">
-        <label for="signUpEmail">eMail Address</label>
-        <input type="email" class="form-control" id="email-input" placeholder="Enter eMail Address Here" />
-      </div>
+        <div class="input-field col">
+          <label for="signUpEmail">Email Address</label><br>
+          <input id="email-input" type="email" class="validate" name="email" placeholder="Enter Email Address Here" />
+          <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
 
-      <div class="form-group col">
-        <label for="signUpPassword">Password</label>
-        <input type="password" class="form-control" id="password-input" placeholder="Enter Password Here" />
-      </div>
+        <div class="input-field col">
+          <label for="signUpPassword">Password</label><br>
+          <input id="password-input" type="password" class="validate" name="password" placeholder="Enter Password Here" />
+        </div>
 
-      <div style="display: none" id="alert" class="alert alert-danger" role="alert" >
-        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-        <span class="sr-only">Error:</span> <span class="msg"></span>
-      </div>
+        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span> <span class="msg"></span>
+        </div>
 
-    <button type="submit" class="btn col">Sign Up</button>
-    </form>
+        <button type="submit" class="btn col">Sign Up</button>
+      </form>
 
-  </div>
+    </div>
   </div>
 </div>
 
