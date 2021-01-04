@@ -1,7 +1,7 @@
 const db = require('../models');
 const itemController = {
   createItem: (req, res) => {
-    db.Item.create(req.body).then((results) => res.json(results));
+    db.Item.create(req.body).then((results) => res.redirect('/search'));
   },
 
   getItems: (req, res) => {

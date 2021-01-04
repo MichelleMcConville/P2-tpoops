@@ -1,8 +1,13 @@
 const path = require('path');
 const isAuthenticated = require('../../config/middleware/isAuthenticated');
 const router = require('express').Router();
+const db = require('../../models');
 
 router.get('/', (req, res) => {
+  res.render('index');
+});
+
+router.get('/home', (req, res) => {
   res.render('index');
 });
 
@@ -19,7 +24,9 @@ router.get('/input', (req, res) => {
 });
 
 router.get('/search', (req, res) => {
-  res.render('search');
+  db.Item.findAll().then((dbItem) => {
+    res.render('search', { items: dbItem });
+  })
 });
 
 router.get('/logout', (req, res) => {
