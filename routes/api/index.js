@@ -2,7 +2,6 @@ const router = require('express').Router();
 const db = require('../../models');
 const passport = require('../../config/passport');
 const itemController = require('../../controllers/itemController');
-const userController = require('../../controllers/userController');
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
   res.json({

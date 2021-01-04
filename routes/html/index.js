@@ -26,7 +26,7 @@ router.get('/input', (req, res) => {
 router.get('/search', (req, res) => {
   db.Item.findAll().then((dbItem) => {
     res.render('search', { items: dbItem });
-  })
+  });
 });
 
 router.get('/logout', (req, res) => {
