@@ -4,11 +4,11 @@ const router = require('express').Router();
 const db = require('../../models');
 
 router.get('/', (req, res) => {
-  res.render('index');
+  res.render('');
 });
 
 router.get('/home', (req, res) => {
-  res.render('index');
+  res.render('');
 });
 
 router.get('/signup', (req, res) => {
@@ -35,7 +35,7 @@ router.get('/logout', (req, res) => {
 });
 
 router.get('/home', isAuthenticated, (_req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/home.html'));
+  res.sendFile(path.join(__dirname, '../../public/home'));
 });
 
 module.exports = router;
