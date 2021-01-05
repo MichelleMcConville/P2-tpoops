@@ -1,4 +1,4 @@
-const $ = window.$;
+// const $ = window.$;
 
 $(document).ready(() => {
   const signUpForm = $('form.signup');
