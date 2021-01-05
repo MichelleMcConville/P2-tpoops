@@ -5,51 +5,29 @@
     <div class="col left">
       <h3>Search</h3>
 
+      <table id="myTable" class="display" style="width: 100%;">
 
-    <div class="pager">        
-      <select class="pagesize" title="Select page size"> 
-        <option selected="selected" value="10">10</option> 
-        <option value="20">20</option> 
-        <option value="30">30</option> 
-        <option value="all">All</option> 
-      </select>
-      <select class="gotoPage" title="Select page number"></select>
+        <thead>
+          <tr>
+            <th>Store</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {{#each items}}
+          <tr>
+            <td>{{dataValues.store}}</td>
+            <td>{{dataValues.city}}</td>
+            <td>{{dataValues.state}}</td>
+            <td>{{dataValues.zipcode}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </div>
-
-    <table id="myTable" class="display" style="width: 100%;">
-
-      <thead>
-        <tr>
-          <th>Store</th>
-          <th>City</th>
-          <th>State</th>
-          <th>ZipCode</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        {{#each items}}
-        <tr>
-          <td>{{dataValues.store}}</td>
-          <td>{{dataValues.city}}</td>
-          <td>{{dataValues.state}}</td>
-          <td>{{dataValues.zipcode}}</td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-
-    <div class="pager"> 
-      <select class="pagesize" title="Select page size"> 
-        <option selected="selected" value="10">10</option> 
-        <option value="20">20</option> 
-        <option value="30">30</option> 
-        <option value="all">All</option> 
-      </select>
-      <select class="gotoPage" title="Select page number"></select>
-    </div>
-
-    </div>  
   </div>
 </div>
 
