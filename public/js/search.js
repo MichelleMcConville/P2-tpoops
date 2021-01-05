@@ -1,6 +1,6 @@
 const $ = window.$;
 
-$(document).ready (() => {
+$(document).ready(() => {
   $('#myTable').DataTable({
     responsive: true
   });
