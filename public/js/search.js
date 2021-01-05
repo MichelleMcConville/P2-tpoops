@@ -1,5 +1,7 @@
 const $ = window.$;
 
-$(document).ready(() => {
-  $('#itemTable').DataTable();
+$(document).ready( function() {
+  $('#myTable').DataTable({
+    reponsive: true
+  });
 });
