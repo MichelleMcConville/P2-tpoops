@@ -1,7 +1,7 @@
 const $ = window.$;
 
-$(document).ready( function() {
+$(document).ready(() => {
   $('#myTable').DataTable({
-    reponsive: true
+    responsive: true
   });
 });

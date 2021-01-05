@@ -100,7 +100,6 @@ nav {
   margin: 0;
 }
 
-
 .nav-wrapper.a {
   padding: 0 20px;
 }
@@ -115,8 +114,16 @@ nav {
 /*          IDs         */
 /************************/
 
+#card {
+  display: inline-flex;
+  justify-content: center;
+  margin: 30px;
+}
+
 #card-deck {
-  margin: 20px 100px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
   text-align: center;
 }
 
