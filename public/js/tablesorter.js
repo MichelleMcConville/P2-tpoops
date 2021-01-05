@@ -1,4 +1,4 @@
-//const $ = window.$;
+// const $ = window.$;
 
 // $(() => {
 //   $('table').tablesorter({
