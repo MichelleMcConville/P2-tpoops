@@ -10,31 +10,31 @@ router.post('/login', passport.authenticate('local'), (req, res) => {
   });
 });
 
-// router.post('/signup', (req, res) => {
-//   db.User.create(req.body)
-//     .then(() => {
-//       res.redirect(307, '/api/login');
-//     })
-//     .catch(err => {
-//       res.status(401).json(err);
-//     });
-// });
+router.post('/signup', (req, res) => {
+  db.User.create(req.body)
+    .then(() => {
+      res.redirect(307, '/api/login');
+    })
+    .catch(err => {
+      res.status(401).json(err);
+    });
+});
 
-// router.get('/user_data', (req, res) => {
-//   if (!req.user) {
-//     return res.json({});
-//   }
-//   const { password, ...user } = req.user;
-//   res.json(user);
-// });
+router.get('/user_data', (req, res) => {
+  if (!req.user) {
+    return res.json({});
+  }
+  const { password, ...user } = req.user;
+  res.json(user);
+});
 
-// router.get('/user', (req, res) => {});
+router.get('/user', (req, res) => {});
 
-// router.post('/user', (req, res) => {});
+router.post('/user', (req, res) => {});
 
-// router.put('/user/:id', (req, res) => {});
+router.put('/user/:id', (req, res) => {});
 
-// router.delete('/user/:id', (req, res) => {});
+router.delete('/user/:id', (req, res) => {});
 
 router.get('/items', itemController.getItems);
 
@@ -48,8 +48,8 @@ router.delete('/items/:id', (req, res) => {
   itemController.deleteItem(req, res);
 });
 
-// router.post('/test', (req, res) => {
-//   console.log('INCOMING REQUEST FROM FRONT END---> ', req.body);
-// });
+router.post('/test', (req, res) => {
+  console.log('INCOMING REQUEST FROM FRONT END---> ', req.body);
+});
 
 module.exports = router;
