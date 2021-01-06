@@ -1,4 +1,4 @@
-const $ = window.$;
+let $ = window.$;
 
 $(document).ready(() => {
   const inputForm = $('form.input');
