@@ -45,7 +45,7 @@ $(document).ready(() => {
   $('.sidenav').sidenav();
 });
 
-function checkText() {
+function checkText () {
   if (
     $('#store-input')
       .val()
