@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
   const loginForm = $('form.login');
   const emailInput = $('input#email-input');
