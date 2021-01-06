@@ -20,6 +20,16 @@ router.post('/signup', (req, res) => {
     });
 });
 
+router.post('/input', (req, res) => {
+  db.Item.create(req.body)
+    .then(() => {
+      res.redirect('/search');
+    })
+    .catch((err) => {
+      res.status(401).json(err);
+    });
+});
+
 router.get('/user_data', (req, res) => {
   if (!req.user) {
     return res.json({});
@@ -28,13 +38,13 @@ router.get('/user_data', (req, res) => {
   res.json(user);
 });
 
-router.get('/user', (req, res) => {});
+router.get('/user', (req, res) => { });
 
-router.post('/user', (req, res) => {});
+router.post('/user', (req, res) => { });
 
-router.put('/user/:id', (req, res) => {});
+router.put('/user/:id', (req, res) => { });
 
-router.delete('/user/:id', (req, res) => {});
+router.delete('/user/:id', (req, res) => { });
 
 router.get('/items', itemController.getItems);
 
