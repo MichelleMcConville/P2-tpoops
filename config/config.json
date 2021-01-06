@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "g17vicbnc8bumz4f",
-    "password": "zllfwee5ei7lfp12",
-    "database": "ihacpal2fon7zvvb",
-    "host": "z3iruaadbwo0iyfp.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "password",
+    "database": "tp_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "g17vicbnc8bumz4f",
-    "password": "zllfwee5ei7lfp12",
-    "database": "ihacpal2fon7zvvb",
-    "host": "z3iruaadbwo0iyfp.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "password",
+    "database": "tp_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
