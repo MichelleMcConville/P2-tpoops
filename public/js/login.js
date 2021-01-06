@@ -1,4 +1,3 @@
-const $ = window.$;
 
 $(document).ready(() => {
   const loginForm = $('form.login');
