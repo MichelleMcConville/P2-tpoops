@@ -45,7 +45,7 @@ $(document).ready(() => {
   $('.sidenav').sidenav();
 });
 
-/* eslint-disable */ 
+/* eslint-disable */
 function checkText () {
   if (
     $('#store-input')
@@ -66,4 +66,4 @@ function checkText () {
     document.getElementById('submit-btn').disabled = false;
   }
 }
-/* eslint-enable */ 
+/* eslint-enable */
