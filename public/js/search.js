@@ -1,7 +1,10 @@
 const $ = window.$;
 
-$(document).ready(() => {
+$(document).ready(function () {
   $('#myTable').DataTable({
-    responsive: true
+    responsive: true,
+    scrollY: '200px',
+    scrollCollapse: true,
+    paging: false
   });
 });
