@@ -1,4 +1,4 @@
-{{>navbar}}
+ {{>navbar}}
 
 <div class="container">
   <div class="row">
@@ -9,30 +9,30 @@
 
         <div class="input-field col">
           <label for="store">Store</label><br>
-          <input id="store-input" type="text" class="validate" name="store" placeholder="Enter Store Name Here" />
+          <input id="store-input" type="text" class="validate" onkeyup="checkText()" name="store" placeholder="Enter Store Name Here" />
         </div>
 
         <div class="input-field col">
           <label for="city">City</label><br>
-          <input id="city-input" type="text" class="validate" name="city" placeholder="Enter City Here" />
+          <input id="city-input" type="text" class="validate" onkeyup="checkText()" name="city" placeholder="Enter City Here" />
         </div>
 
         <div class="input-field col">
           <label for="state">State</label><br>
-          <input id="state-input" type="text" class="validate" name="state" placeholder="Enter State Here" />
+          <input id="state-input" type="text" class="validate" onkeyup="checkText()" name="state" placeholder="Enter State Here" />
         </div>
 
         <div class="input-field col">
           <label for="zipCode">Zip Code</label><br>
-          <input id="zip-code-input" type="text" class="validate" name="zipcode" placeholder="Enter Zip Code Here" />
+          <input id="zip-code-input" type="text" class="validate" onkeyup="checkText()" name="zipcode" placeholder="Enter Zip Code Here" />
         </div>
 
-        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+        <div style="display: none" id="alert" class="alert alert-danger" role="alert" >
           <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
           <span class="sr-only">Error:</span> <span class="msg"></span>
         </div>
 
-        <button type="submit" class="btn col">Submit</button>
+      <button type="submit" disabled id="submit-btn" class="btn col">Submit</button>
       </form>
 
     </div>

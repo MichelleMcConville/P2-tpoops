@@ -13,7 +13,7 @@ router.post('/login', passport.authenticate('local'), (req, res) => {
 router.post('/signup', (req, res) => {
   db.User.create(req.body)
     .then(() => {
-      res.redirect(307, '/api/login');
+      res.redirect(200, '/api/login');
     })
     .catch(err => {
       res.status(401).json(err);
@@ -57,9 +57,5 @@ router.put('/items/:id', (req, res) => {
 router.delete('/items/:id', (req, res) => {
   itemController.deleteItem(req, res);
 });
-
-// router.post('/test', (req, res) => {
-//   console.log('INCOMING REQUEST FROM FRONT END---> ', req.body);
-// });
 
 module.exports = router;

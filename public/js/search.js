@@ -4,6 +4,6 @@ $(document).ready(function () {
     responsive: true,
     scrollY: '200px',
     scrollCollapse: true,
-    paging: false
+    paging: true
   });
 });

@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
   const inputForm = $('form.input');
   const storeInput = $('input#store-input');
@@ -35,7 +34,7 @@ $(document).ready(() => {
       .then(() => {
         window.location.replace('/input');
       })
-      .cath(handleInputErr);
+      .catch(handleInputErr);
   };
 
   const handleInputErr = err => {
@@ -45,3 +44,26 @@ $(document).ready(() => {
 
   $('.sidenav').sidenav();
 });
+
+/* eslint-disable */
+function checkText () {
+  if (
+    $('#store-input')
+      .val()
+      .trim() === '' ||
+    $('#city-input')
+      .val()
+      .trim() === '' ||
+    $('#state-input')
+      .val()
+      .trim() === '' ||
+    $('#zip-code-input')
+      .val()
+      .trim() === ''
+  ) {
+    document.getElementById('submit-btn').disabled = true;
+  } else {
+    document.getElementById('submit-btn').disabled = false;
+  }
+}
+/* eslint-enable */
