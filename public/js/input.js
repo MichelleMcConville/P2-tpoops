@@ -31,9 +31,11 @@ $(document).ready(function () {
       state: state,
       zipcode: zipcode
     })
+      /* eslint-disable */
       .then(function () {
-        location.href="/search"
+        location.href = '/search';
       })
+      /* eslint-enable */
       .catch(handleInputErr);
   };
 
