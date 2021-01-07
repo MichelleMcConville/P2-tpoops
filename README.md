@@ -7,9 +7,11 @@
 
 A simple full stack Toilet 🚽 Paper Report & Finding App
 
-| ***Screenshot***              |
-| :---------------------------: |
-| ![SC](tbd)                    |
+| ***Home Page***                   | ***Input Page***                |
+| --------------------------------- | ------------------------------- |
+| ![Home](./docs/tpoops400.jpg)     | ![Input](./docs/tpInput400.jpg) |
+| ***Search Page***                 |
+| ![Search](./docs/tpSearch400.jpg) |
 
 ## Table of Contents ✨
 
