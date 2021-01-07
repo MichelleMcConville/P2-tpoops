@@ -5,7 +5,7 @@
 
 ## Description
 
-A simple full stack Toilet 🚽 Paper Report & Finding App
+A simple full stack Toilet 🚽 Paper Finding App
 
 | ***Screenshot***              |
 | :---------------------------: |
@@ -28,7 +28,7 @@ A simple full stack Toilet 🚽 Paper Report & Finding App
   Node - MySQL - Express - Sequelize - Handlebars - Heroku
 ```
 
-## User Story 📖‍ <a name="us"></a>
+## User Story 👨‍💼 <a name="us"></a>
 
 ```md
 AS a toilet paper user
@@ -63,4 +63,4 @@ This project is **`Massachusetts Institute of Technology`** licensed
 
 ---
 
- Copyright ©️ 2021 🌻 Michelle McConville | Kendra Hallam | Kobe Hill | Paul LaBounty
+ Copyright ©️ 2021 🌷 Michelle McConville, Kendra Hallam, Kobe Hill & Paul LaBounty

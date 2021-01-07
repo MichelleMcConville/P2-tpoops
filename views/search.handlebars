@@ -1,0 +1,31 @@
+
+{{>navbar}}
+<div class="container">
+  <div class="row">
+    <div class="col s12 left">
+      <h3>Search</h3>
+      <table id="myTable" class="display" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Store</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each items}}
+          <tr>
+            <td>{{dataValues.store}}</td>
+            <td>{{dataValues.city}}</td>
+            <td>{{dataValues.state}}</td>
+            <td>{{dataValues.zipcode}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{{>footer}}
+<script src="/js/search.js" type="text/javascript"></script>

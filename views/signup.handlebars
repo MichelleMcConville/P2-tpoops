@@ -1,0 +1,35 @@
+{{>navbar}}
+
+<div class="container">
+  <div class="row">
+    <div class="col left">
+      <h3>Sign Up</h3>
+
+      <form class="signup">
+
+        <div class="input-field col">
+          <label for="signUpEmail">Email Address</label><br>
+          <input id="email-input" type="email" class="validate" name="email" placeholder="Enter Email Address Here" />
+          <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col">
+          <label for="signUpPassword">Password</label><br>
+          <input id="password-input" type="password" class="validate" name="password" placeholder="Enter Password Here" />
+        </div>
+
+        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span> <span class="msg"></span>
+        </div>
+
+        <button type="submit" class="btn col">Sign Up</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{{>footer}}
+
+<script src="/js/signup.js" type="text/javascript"></script>
