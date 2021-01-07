@@ -30,15 +30,15 @@ router.post('/input', (req, res) => {
     });
 });
 
-router.post('/search', (req, res) => {
-  db.Item.destroy(req.body)
-    .then(() => {
-      res.redirect('/search');
-    })
-    .catch((err) => {
-      res.status(401).json(err);
-    });
-});
+// router.post('/search', (req, res) => {
+//   db.Item.destroy(req.body)
+//     .then(() => {
+//       res.redirect('/search');
+//     })
+//     .catch((err) => {
+//       res.status(401).json(err);
+//     });
+// });
 
 router.get('/user_data', (req, res) => {
   if (!req.user) {
