@@ -1,11 +1,11 @@
-$(document).ready(() => {
+$(document).ready(function () {
   const inputForm = $('form.input');
   const storeInput = $('input#store-input');
   const cityInput = $('input#city-input');
   const stateInput = $('input#state-input');
   const zipCodeInput = $('input#zip-code-input');
 
-  inputForm.on('submit', event => {
+  inputForm.on('submit', function (event) {
     event.preventDefault();
     const itemData = {
       store: storeInput.val().trim(),
@@ -24,20 +24,20 @@ $(document).ready(() => {
     zipCodeInput.val('');
   });
 
-  const inputData = (store, city, state, zipcode) => {
-    $.post('api/input', {
+  const inputData = function (store, city, state, zipcode) {
+    $.post('/api/input', {
       store: store,
       city: city,
       state: state,
       zipcode: zipcode
     })
-      .then(() => {
-        window.location.replace('/input');
+      .then(function () {
+        location.href="/search"
       })
       .catch(handleInputErr);
   };
 
-  const handleInputErr = err => {
+  const handleInputErr = function (err) {
     $('#alert .msg').text(err.responseJSON);
     $('#alert').fadeIn(500);
   };
