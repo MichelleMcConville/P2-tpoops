@@ -1,6 +1,7 @@
 /************************/
 /*        Global        */
 /************************/
+
 body {
   background-image: linear-gradient(to right, #B3B3B3, white, #B3B3B3)
 }
@@ -89,6 +90,12 @@ nav {
   box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
 }
 
+.dataTables_filter > label,
+.dataTables_filter > input {
+  margin: 0;
+  padding: 0;
+}
+
 .input-field {
   display:inline-flex;
   margin-top: 5px;
@@ -137,16 +144,21 @@ nav {
   font-size: 60px;
 }
 
-#left-card {
+/* #left-card {
   background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3);
-}
+} */
 
 #middle-card {
-  background: linear-gradient(to right, #B3B3B3, #B0C0D6);
+  background: linear-gradient(to right, #8A7D63, #B3B3B3);
+}
+
+#myTable_length > label {
+  margin: 0;
+  padding: 0;
 }
 
 #right-card {
-  background: linear-gradient(to right,#B0C0D6, #63738A, #26303D);
+  background: linear-gradient(to right, #B0C0D6, #63738A);
 }
 
 #name-input, 
@@ -164,7 +176,7 @@ nav {
   height: 8vh;
   margin: 8px 0;
   padding-left: 10px;
-  width: 70vw;
+  width: 60vw;
 }
 
 /************************/
@@ -193,6 +205,22 @@ card-text[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+/************************/
+/*         Name         */
+/************************/
+
+[name="myTable_length"] {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 15px 0;
+  float: left;
+}
+
+#text {
+  padding: 10px;
+  margin: 10px;
 }
 
 /************************/
