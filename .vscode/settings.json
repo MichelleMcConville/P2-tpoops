@@ -4,5 +4,8 @@
     "exphbs",
     "jawsdb",
     "resave"
+  ],
+  "cSpell.ignoreWords": [
+    "sidenav"
   ]
 }
