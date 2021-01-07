@@ -3,7 +3,8 @@
 /************************/
 
 body {
-  background-image: linear-gradient(to right, #B3B3B3, white, #B3B3B3)
+  background-image: linear-gradient(to right, #B3B3B3, white, #B3B3B3);
+  font-weight: bold;
 }
 
 footer {
@@ -18,11 +19,6 @@ footer {
   width: 100vw;
 }
 
-/* form.signup,
-form.login {
-  margin-top: 50px;
-} */
-
 h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;
@@ -34,6 +30,7 @@ h3 {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;
   margin: 150px 0 16px 12px;
+  padding-bottom: 12px;
 }
 
 img {
@@ -53,6 +50,17 @@ nav {
   text-shadow: 2px 0px 2px 0px;
   top: 0;
   width: 100vw;
+}
+
+th {
+  border-radius: 5px;
+}
+
+thead {
+  background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3, #B0C0D6, #63738A, #26303D);
+  background: #B3B3B3;
+  color: #333;
+  border-radius: 8px;
 }
  
 /************************/
@@ -88,6 +96,13 @@ nav {
 .card {
   border-radius: 10px;
   box-shadow: 0 0.4rem 0.4rem 0 #2b213b;
+}
+
+.card-container {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  text-align: center;
 }
 
 .dataTables_filter > label,
@@ -127,13 +142,6 @@ nav {
   margin: 30px;
 }
 
-#card-deck {
-  justify-content: center;
-  display: flex;
-  margin: auto;
-  text-align: center;
-}
-
 #card-text {
   color: #333;
   font-weight: 700;
@@ -143,10 +151,6 @@ nav {
 #fa {
   font-size: 60px;
 }
-
-/* #left-card {
-  background: linear-gradient(to right, #3D3320, #8A7D63, #B3B3B3);
-} */
 
 #middle-card {
   background: linear-gradient(to right, #8A7D63, #B3B3B3);
@@ -196,6 +200,10 @@ nav {
   width: 60vw;
 }
 
+#search {
+  margin-left: 0;
+}
+
 /************************/
 /*       Pop-Outs       */
 /************************/
@@ -239,3 +247,9 @@ card-text[disabled]:hover {
 /************************/
 /*        @Media        */
 /************************/
+
+@media screen and (max-width: 800px) {
+  #card {
+    display: block;
+  }
+}

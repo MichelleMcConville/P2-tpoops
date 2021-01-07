@@ -30,6 +30,16 @@ router.post('/input', (req, res) => {
     });
 });
 
+router.post('/search', (req, res) => {
+  db.Item.destroy(req.body)
+    .then(() => {
+      res.redirect('/search');
+    })
+    .catch((err) => {
+      res.status(401).json(err);
+    });
+});
+
 router.get('/user_data', (req, res) => {
   if (!req.user) {
     return res.json({});
@@ -37,14 +47,6 @@ router.get('/user_data', (req, res) => {
   const { password, ...user } = req.user;
   res.json(user);
 });
-
-router.get('/user', (req, res) => { });
-
-router.post('/user', (req, res) => { });
-
-router.put('/user/:id', (req, res) => { });
-
-router.delete('/user/:id', (req, res) => { });
 
 router.get('/items', itemController.getItems);
 
@@ -57,5 +59,14 @@ router.put('/items/:id', (req, res) => {
 router.delete('/items/:id', (req, res) => {
   itemController.deleteItem(req, res);
 });
+
+router.get('/user', (req, res) => { });
+
+router.post('/user', (req, res) => { });
+
+router.put('/user/:id', (req, res) => { });
+
+router.delete('/user/:id', (req, res) => { });
+
 
 module.exports = router;
